@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五餅二魚 寵物保母｜基隆地區</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    background: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.area {
+    font-size: 14px;
+    color: #4CAF50;
+    margin-top: 5px;
+}
+
+header {
+    height: 90vh;
+    background: url("images/cat1.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 42px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.about-list li {
+    display: block;
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 250px;
+}
+
+.price {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.contact {
+    text-align: center;
+}
+
+.qr {
+    width: 220px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* ===== 品牌質感介紹區 ===== */
+
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    max-width: 760px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+    color: #444;
+}
+
+.about-subtitle {
+    margin-top: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 35px 0;
+}
+
+.about-list li {
+    margin: 12px 0;
+    position: relative;
+    font-size: 18px;
+}
+
+.about-list li::before {
+    content: "●";
+    color: #6bbf73;
+    margin-right: 8px;
+}
+
+.about-highlight {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+.about-section {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.about-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.about-highlight {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* 點擊放大圖片效果 */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.gallery img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>五餅二魚 寵物保母</h2>
+    <div class="area">服務地區：基隆地區</div>
+</nav>
+
+<header>
+    <h1>給毛孩最安心的陪伴 🐾</h1>
+</header>
+
+<section class="about-section">
+    <h2 class="about-title">五餅二魚 — 到府毛孩保母</h2>
+
+    <div class="about-content">
+        <p>
+        「五餅二魚」的名字帶著祝福——分享愛與關心，
+        也希望每一隻貓咪、狗狗、兔子都能被善待、被珍惜。
+        這份祝福，是我們創立五餅二魚的初心，
+        也是一直想守護的理念。
+        </p>
+
+        <p>
+        在毛孩熟悉的家中，我們提供細心的照護與陪伴。
+        貓咪、狗狗、兔子都能按自己的節奏吃飯、休息、活動，
+        我們依照飼主指示，確保飲食、健康與作息都得到妥善照料。
+        </p>
+
+        <p class="about-subtitle">
+        在照護前，我們會詳細了解毛孩的生活方式
+        </p>
+
+        <ul class="about-list">
+            <li>飲食內容與餵食方式</li>
+            <li>保健品或藥物補充</li>
+            <li>作息與活動喜好</li>
+            <li>個性與注意事項</li>
+        </ul>
+
+        <p>
+        照護過程中，我們會定期回報毛孩狀況，
+        讓爸爸媽媽放心，知道孩子在熟悉的環境裡，
+        也能被細心照護、被珍惜、被愛護。
+        </p>
+
+        <p class="about-highlight">
+        五餅二魚到府保母，讓毛孩安心自在，也讓家長放心。
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>毛孩日常紀錄</h2>
+    <div class="gallery">
+        <img src="images/cat1.jpg">
+        <img src="images/cat2.jpg">
+        <img src="images/cat3.jpg">
+        <img src="images/cat4.jpg">
+        <img src="images/cat5.jpg">
+        <img src="images/cat6.jpg">
+        <img src="images/cat7.jpg">
+        <img src="images/cat8.jpg">
+        <img src="images/cat9.jpg">
+        <img src="images/cat10.jpg">
+    </div>
+</section>
+
+<section>
+    <h2>收費方式</h2>
+    <div class="price">
+        到府服務：$500 / 次<br>
+        遛狗服務：$500 / 次<br>
+    </div>
+</section>
+
+<section>
+    <h2>聯絡我們</h2>
+    <div class="contact">
+        請掃描下方 LINE 行動條碼預約服務
+        <img src="line.jpg" alt="LINE 行動條碼" class="qr">
+        <p>加入後請傳送訊息與我們聯繫 😊</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 五餅二魚 寵物保母 ｜ 基隆地區到府服務
+</footer>
+
+<!-- 圖片燈箱 -->
+<div id="lightbox" style="display:none;">
+    <span id="closeBtn">&times;</span>
+    <img id="lightboxImg">
+</div>
+
+<style>
+#lightbox {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightboxImg {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 12px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+</style>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.getElementById("closeBtn");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
